@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NationalPark xmlns="http://www.example.com/nationalparks"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://www.example.com/nationalparks https://jng-bug.github.io/cse445_assignment4/NationalParks.xsd">
+<NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="https://jng-bug.github.io/cse445_assignment4/NationalParks.xsd">
 
   <!-- error 5: two Name elements -->
   <NationalPark Rating="4.9">
-    <n>Grand Canyon</n>
-    <n>Grand Canyon National Park</n>
+    <Name>Grand Canyon</Name>
+    <Name>Grand Canyon National Park</Name>
     <Phone>928-638-7496</Phone>
     <Phone>888-297-2757</Phone>
     <Phone>866-499-2574</Phone>
@@ -19,9 +18,9 @@
     </Address>
   </NationalPark>
 
-  <!-- error 2: NearestAirport attribute missing -->
+  <!-- error 2: NearestAirport missing -->
   <NationalPark Rating="4.8">
-    <n>Yellowstone</n>
+    <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
     <Phone>307-344-2107</Phone>
     <Address>
@@ -33,9 +32,9 @@
     </Address>
   </NationalPark>
 
-  <!-- error 3: Phone element missing -->
+  <!-- error 3: Phone missing -->
   <NationalPark>
-    <n>Yosemite</n>
+    <Name>Yosemite</Name>
     <Address NearestAirport="Fresno Yosemite International">
       <Number>9035</Number>
       <Street>Village Drive</Street>
@@ -47,7 +46,7 @@
 
   <!-- error 4: Address has no closing tag -->
   <NationalPark Rating="4.7">
-    <n>Zion</n>
+    <Name>Zion</Name>
     <Phone>435-772-3256</Phone>
     <Address NearestAirport="St. George Regional">
       <Number>1</Number>
@@ -58,7 +57,7 @@
   </NationalPark>
 
   <NationalPark>
-    <n>Rocky Mountain</n>
+    <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
     <Phone>970-627-3471</Phone>
     <Address NearestAirport="Denver International">
@@ -71,7 +70,7 @@
   </NationalPark>
 
   <NationalPark Rating="4.6">
-    <n>Olympic</n>
+    <Name>Olympic</Name>
     <Phone>360-565-3130</Phone>
     <Address NearestAirport="Seattle-Tacoma International">
       <Number>3002</Number>
@@ -83,7 +82,7 @@
   </NationalPark>
 
   <NationalPark Rating="4.8">
-    <n>Acadia</n>
+    <Name>Acadia</Name>
     <Phone>207-288-3338</Phone>
     <Address NearestAirport="Bangor International">
       <Number>25</Number>
@@ -95,7 +94,7 @@
   </NationalPark>
 
   <NationalPark>
-    <n>Great Smoky Mountains</n>
+    <Name>Great Smoky Mountains</Name>
     <Phone>865-436-1200</Phone>
     <Phone>865-436-1291</Phone>
     <Address NearestAirport="McGhee Tyson">
@@ -108,7 +107,7 @@
   </NationalPark>
 
   <NationalPark Rating="4.5">
-    <n>Joshua Tree</n>
+    <Name>Joshua Tree</Name>
     <Phone>760-367-5500</Phone>
     <Address NearestAirport="Palm Springs International">
       <Number>74485</Number>
@@ -120,7 +119,7 @@
   </NationalPark>
 
   <NationalPark Rating="4.9">
-    <n>Glacier</n>
+    <Name>Glacier</Name>
     <Phone>406-888-7800</Phone>
     <Address NearestAirport="Glacier Park International">
       <Number>64</Number>
@@ -132,7 +131,7 @@
   </NationalPark>
 
   <NationalPark>
-    <n>Bryce Canyon</n>
+    <Name>Bryce Canyon</Name>
     <Phone>435-834-5322</Phone>
     <Address NearestAirport="Cedar City Regional">
       <Number>1</Number>
