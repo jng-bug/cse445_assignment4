@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://www.example.com/nationalparks"
            xmlns="http://www.example.com/nationalparks"
-           elementFormDefault="unqualified">
+           elementFormDefault="qualified">
 
   <xs:element name="NationalParks">
     <xs:complexType>
