@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:noNamespaceSchemaLocation="https://jng-bug.github.io/cse445_assignment4/NationalParks.xsd">
+<NationalPark xmlns="http://www.example.com/nationalparks"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.example.com/nationalparks https://jng-bug.github.io/cse445_assignment4/NationalParks.xsd">
 
   <!-- error 5: two Name elements -->
   <NationalPark Rating="4.9">
